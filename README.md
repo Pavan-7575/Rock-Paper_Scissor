@@ -53,11 +53,7 @@ Rock-Paper_Scissor/
 ```
 
 ## Screenshots
-
-<<<<<<< HEAD
-=======
-<img width="838" height="671" alt="image" src="https://github.com/user-attachments/assets/4ce057a1-b5b4-4a07-baec-f43633bcd5fb" />
->>>>>>> 4a15e1a2592342c2ad983c6501fc80caa1320fd9
+<img width="835" height="751" alt="image" src="https://github.com/user-attachments/assets/8b1717f5-5571-455a-b1de-55023c1eb1fb" />
 
 
 ## Contributing
