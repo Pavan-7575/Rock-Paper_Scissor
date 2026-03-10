@@ -18,9 +18,12 @@ This is an interactive web-based Rock Paper Scissors game where you can play aga
 
 1. Clone or download the repository
 2. Open `CODE/Game.html` in your web browser
-3. Click on one of the three choices: Rock, Paper, or Scissors
-4. The computer will randomly select its choice
-5. See the result and updated scores
+3. Click **Start Game** to enable the choices and reset scores
+4. Choose one of the three options: Rock, Paper, or Scissors
+5. The computer will randomly select its choice; results appear in the center
+6. Click **End Game** to disable the choices when you're done
+
+
 
 ## Game Rules
 
@@ -51,7 +54,7 @@ Rock-Paper_Scissor/
 
 ## Screenshots
 
-*(Add screenshots here if available)*
+
 
 ## Contributing
 

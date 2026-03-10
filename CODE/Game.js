@@ -83,11 +83,36 @@ break;
 }
 }
 
-// This function creates and adds an eventlistener to the rock, paper scissors html element and the passes the value of that element to the game function
+// Separate functions for event listeners to allow removal
+function rockGame() { game('rock'); }
+function paperGame() { game('paper'); }
+function scissorsGame() { game('scissors'); }
 
+// Start the game
+function startGame() {
+    userScore = 0;
+    computerScore = 0;
+    userScore_span.innerHTML = userScore;
+    computerScore_span.innerHTML = computerScore;
+    rock_div.addEventListener('click', rockGame);
+    paper_div.addEventListener('click', paperGame);
+    scissors_div.addEventListener('click', scissorsGame);
+    document.querySelector('.choices').classList.remove('disabled');
+    // reset result message
+    result_div.innerHTML = '<p>Make your move.</p>';
+}
+
+// End the game
+function endGame() {
+    rock_div.removeEventListener('click', rockGame);
+    paper_div.removeEventListener('click', paperGame);
+    scissors_div.removeEventListener('click', scissorsGame);
+    document.querySelector('.choices').classList.add('disabled');
+}
+
+// Main function to initialize button listeners
 function main() {
-rock_div.addEventListener('click', () => game('rock'));
-paper_div.addEventListener('click', () => game('paper'));
-scissors_div.addEventListener('click', () => game('scissors'));
+    document.getElementById('start-btn').addEventListener('click', startGame);
+    document.getElementById('end-btn').addEventListener('click', endGame);
 }
 main();

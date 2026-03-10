@@ -83,6 +83,24 @@ header h1 {
 .result {
   line-height: 50px;
 }
+.buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+button {
+  background: #e2584d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin: 0 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background: #c52e2e;
+}
 .choices {
   margin: 0 auto;
   text-align: center;
@@ -93,6 +111,10 @@ header h1 {
   padding: 10px;
   margin: auto 10px;
   transition: all 0.3s ease;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
 }
 .choice img {
   filter: invert(100%);
